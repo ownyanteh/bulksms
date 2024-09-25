@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>BULK SMS</title>
+</head>
+<body class="font-Rubik bg-gray-100">
+    <nav class="flex justify-between bg-black p-4 fixed right-0 left-0 top-0">
+        <div>
+            <a href="./index.html">
+                <svg class="w-16" fill="orange" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 6 5 L 6 15 L 2 15 L 2 28 L 19 28 L 19 24 L 30 24 L 30 11 L 23 11 L 23 5 L 6 5 z M 8 7 L 21 7 L 21 11 L 12 11 L 12 15 L 8 15 L 8 7 z M 14 13 L 28 13 L 28 22 L 19 22 L 19 15 L 14 15 L 14 13 z M 23 15 L 23 17 L 26 17 L 26 15 L 23 15 z M 4 17 L 6 17 L 13 17 L 17 17 L 17 18.113281 L 10.960938 21.867188 C 10.681938 22.041188 10.319062 22.042188 10.039062 21.867188 L 4 18.115234 L 4 17 z M 17 20.46875 L 17 26 L 4 26 L 4 20.470703 L 8.9824219 23.566406 C 9.4504219 23.857406 9.976 24.003906 10.5 24.003906 C 11.024 24.003906 11.548625 23.857453 12.015625 23.564453 L 17 20.46875 z"></path>
+                </svg>
+            </a>  
+        </div>
+        <div class="flex space-x-4">
+            <a class="text-[orange] hover:text-orange-500" href="#">Home</a>
+            <a class="text-[orange] hover:text-orange-500" href="#">About</a> 
+            <a class="text-[orange] hover:text-orange-500" href="#">Send SMS</a>
+            <a class="text-[orange] hover:text-orange-500" href="#">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="flex justify-center gap-8 pt-[10%]">
+        <div class="w-1/2 items-center pt-[12%] pl-[13%]">
+            <h1 class="text-6xl font-bold">SAY HI!!!</h1>
+            <p class="mt-4 text-lg">Your No. 1 platform to share your love</p>
+        </div>
+        <div>
+            <img class="w-full" src="./assets/images/messageshero.svg" alt="message on phone">
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-8">Send Bulk SMS</h2>
+            <form id="smsForm" class="bg-white p-6 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="phoneNumbers" class="block text-sm font-medium text-gray-700">Phone Numbers (comma separated)</label>
+                    <textarea id="phoneNumbers" rows="3" class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter phone numbers..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" rows="5" class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="Enter your message..."></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-[orange] text-white font-semibold py-2 px-4 rounded hover:bg-orange-400">Send SMS</button>
+                </div>
+            </form>
+            <div id="responseMessage" class="mt-8 text-center"></div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-4 text-center">
+        <p>&copy; 2024 Bulk SMS. All rights reserved.</p>
+        <p class="text-[12px]">Powered by <a href="https://www.ownconceptsgh.com">OWN Concepts</a></p>
+    </footer>
+
+</body>
+</html>
